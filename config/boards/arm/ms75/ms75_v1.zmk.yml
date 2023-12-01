@@ -1,0 +1,15 @@
+file_format: "1"
+id: ms75_v1
+name: Mystery 75_V1
+url:
+type: board
+arch: arm
+features:
+  - keys
+  - display
+outputs:
+  - usb
+  - ble
+siblings:
+  - ms75_v1_left
+  - ms75_v1_right
