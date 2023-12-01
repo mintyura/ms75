@@ -1,4 +1,4 @@
-#include "ms75.dtsi"
+#include "ms75_v1.dtsi"
 #include "ms75_v1_right_pinctrl.dtsi"
 /{
     chosen {
