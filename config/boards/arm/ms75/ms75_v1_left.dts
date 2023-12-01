@@ -1,0 +1,68 @@
+#include "ms75_v1.dts"
+#include "ms75_v1_left_pinctrl.dtsi"
+    / {
+        chosen {
+            zmk,underglow = &led_strip;
+            zmk,battery = &vbatt;
+        };
+    
+        kscan0: kscan_0 {
+            compatible = "zmk,kscan-gpio-matrix";
+            label = "KSCAN";
+            diode-direction = "col2row";
+    
+            col-gpios
+            = <&gpio0 13 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0  6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 26 GPIO_ACTIVE_HIGH>
+            , <&gpio1 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0  3 GPIO_ACTIVE_HIGH>
+            , <&gpio0 28 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
+            , <&gpio0  2 GPIO_ACTIVE_HIGH>
+            ;
+
+            row-gpios
+            = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+                };
+    	vbatt: vbatt {
+		compatible = "zmk,battery-voltage-divider";
+		label = "BATTERY";
+		io-channels = <&adc 6>;
+        output-ohms = <2000000>;
+        full-ohms = <(2000000 + 100000)>;
+	};
+};
+
+&spi3 {
+  compatible = "nordic,nrf-spim";
+  status = "okay";
+
+  pinctrl-0 = <&spi3_default>;
+  pinctrl-1 = <&spi3_sleep>;
+  pinctrl-names = "default", "sleep";
+
+  led_strip: ws2812@0 {
+    compatible = "worldsemi,ws2812-spi";
+    label = "WS2812";
+
+    /* SPI */
+    reg = <0>; /* ignored, but necessary for SPI bindings */
+    spi-max-frequency = <4000000>;
+
+    /* WS2812 */
+    chain-length = <20>; /* number of LEDs */
+    spi-one-frame = <0x70>;
+    spi-zero-frame = <0x40>;
+    color-mapping = <LED_COLOR_ID_GREEN
+                          LED_COLOR_ID_RED
+                          LED_COLOR_ID_BLUE>;
+  };
+};
