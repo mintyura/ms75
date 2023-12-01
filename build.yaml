@@ -1,0 +1,3 @@
+include:
+  - board: ms75_v1_left
+  - board: ms75_v1_right
