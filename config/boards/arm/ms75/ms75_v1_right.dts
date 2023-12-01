@@ -7,10 +7,9 @@
         zmk,underglow = &led_strip;
     };
 
-    &default_transform {
-	    col-offset = <10>;
-    };
-
+	default_transform: keymap_transform_0 {
+		col-offset = <10>;
+		};
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
