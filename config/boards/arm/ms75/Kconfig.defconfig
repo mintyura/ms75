@@ -1,7 +1,7 @@
-if BOARD_MS75_V1_LEFT
+if BOARD_MS75_V1_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "ms75 v1 left"
+	default "ms75 v1 right"
 
 if ZMK_DISPLAY
 config I2C
@@ -30,7 +30,7 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # ZMK_DISPLAY
-endif # BOARD_MS75_V1_LEFT
+endif # BOARD_MS75_V1_RIGHT
 
 if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
 
