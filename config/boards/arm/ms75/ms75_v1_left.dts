@@ -1,5 +1,5 @@
 #include "ms75_v1.dts"
-#include "ms75_v1_left_pinctrl.dtsi"
+#include "ms75_v1_left_pincrtl.dtsi"
     / {
         chosen {
             zmk,underglow = &led_strip;
