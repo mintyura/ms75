@@ -1,9 +1,0 @@
-config BOARD_MS75_V1_LEFT
-    bool "ms75 v1 left"
-    depends on SOC_NRF52840_QIAA
-    select BOARD_MS75_LEFT
-
-config BOARD_MS75_V1_RIGHT
-    bool "ms75 v1 right"
-    depends on SOC_NRF52840_QIAA
-    select BOARD_MS75_RIGHT
