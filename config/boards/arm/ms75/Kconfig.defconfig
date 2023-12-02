@@ -1,0 +1,72 @@
+if BOARD_MS75_V1_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "ms75 v1 right"
+
+if ZMK_DISPLAY
+config I2C
+	default y
+	
+config LVGL
+    default y
+
+config SSD1306
+	default y
+
+config SSD1306_REVERSE_MODE
+	default y
+
+config LV_Z_VDB_SIZE
+	default 64
+
+config LV_Z_DPI
+	default 148
+
+config LV_Z_BITS_PER_PIXEL
+	default 1
+
+choice LV_COLOR_DEPTH
+	default LV_COLOR_DEPTH_1
+endchoice
+
+endif # ZMK_DISPLAY
+endif # BOARD_MS75_V1_RIGHT
+
+if BOARD_MS75_V1_LEFT
+
+	config ZMK_KEYBOARD_NAME
+	default "ms75 v1 left"
+
+endif # BOARD_MS75_V1_LEFT
+
+if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
+
+config BOARD
+	default "MS75"
+
+config ZMK_SPLIT
+	default y
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+	default y
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+endif # BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
