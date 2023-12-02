@@ -5,7 +5,8 @@ type: board
 arch: arm
 features:
   - keys
-  - RGB
+  - underglow
+  - encoder
 outputs:
   - usb
   - ble
