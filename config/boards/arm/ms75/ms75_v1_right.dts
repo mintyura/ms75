@@ -9,7 +9,7 @@
 		};
 	
 		default_transform: keymap_transform_0 {
-			col-offset = <10>;
+			col-offset = <9>;
 		};
 	
 		kscan0: kscan_0 {
