@@ -17,7 +17,7 @@
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
-                    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
+                    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1        
 				>;
                                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			};
@@ -31,7 +31,7 @@
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1
                     &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
-                    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
+                    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    &kp N1    
 				>;
                                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			};
