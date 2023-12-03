@@ -37,9 +37,6 @@ if BOARD_MS75_V1_LEFT
 config ZMK_KEYBOARD_NAME
 	default "ms75 v1 left"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-	default y
-
 endif # BOARD_MS75_V1_LEFT
 
 if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
@@ -48,6 +45,9 @@ config BOARD
 	default "MS75"
 
 config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 config BT_CTLR
