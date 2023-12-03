@@ -34,8 +34,11 @@ endif # BOARD_MS75_V1_RIGHT
 
 if BOARD_MS75_V1_LEFT
 
-	config ZMK_KEYBOARD_NAME
+config ZMK_KEYBOARD_NAME
 	default "ms75 v1 left"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
 endif # BOARD_MS75_V1_LEFT
 
