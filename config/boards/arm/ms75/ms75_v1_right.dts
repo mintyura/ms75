@@ -40,6 +40,20 @@
             ;
             		};
 
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+    };
+
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        label = "LEFT_ENCODER";
+        a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+        status = "okay";
+    };
+
 		vbatt: vbatt {
 			 compatible = "zmk,battery-voltage-divider";
 			 label = "VBATT";
@@ -71,14 +85,6 @@
 	   com-sequential;
 	   prechargep = <0x22>;
    };
-};
-
-encoder: &qdec0 {
-    status = "okay";
-    led-pre = <0>;
-    steps = <80>;
-    pinctrl-0 = <&qdec_default>;
-    pinctrl-names = "default";
 };
 
     &spi3 {
