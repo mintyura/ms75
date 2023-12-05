@@ -7,6 +7,20 @@
 			zmk,underglow = &led_strip;
 			zmk,battery = &vbatt;
 		};
+
+  		  sensors: sensors {
+    		    compatible = "zmk,keymap-sensors";
+       			 sensors = <&right_encoder>;
+      			  triggers-per-rotation = <20>;
+    };
+
+   		 right_encoder: encoder_right {
+  			      compatible = "alps,ec11";
+   				  a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      				  b-gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      				  steps = <80>;
+      				  status = "okay";
+    };
 	
 		default_transform: keymap_transform_0 {
 			col-offset = <9>;
