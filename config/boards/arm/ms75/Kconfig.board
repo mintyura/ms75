@@ -6,9 +6,9 @@
 config BOARD_MS75_V1_LEFT
     bool "Mystery_75 Left"
     depends on SOC_NRF52840_QIAA
-    select BOARD_MS75_V1_LEFT
+    select BOARD_MS75_LEFT
 
 config BOARD_MS75_V1_RIGHT
     bool "Mystery_75 Right"
     depends on SOC_NRF52840_QIAA
-    select BOARD_MS75_V1_RIGHT
+    select BOARD_MS75_RIGHT
