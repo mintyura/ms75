@@ -3,6 +3,9 @@ if BOARD_MS75_V1_RIGHT
 config ZMK_KEYBOARD_NAME
 	default "ms75 v1 right"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
 if ZMK_DISPLAY
 config I2C
 	default y
@@ -45,9 +48,6 @@ config BOARD
 	default "MS75"
 
 config ZMK_SPLIT
-	default y
-
-config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 config BT_CTLR
