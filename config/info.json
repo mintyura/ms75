@@ -119,7 +119,7 @@
   },
   "sensors": [
     {
-      "ref": "right_encoder",
+      "ref": "encoder",
       "name": "&qdec0",
       "identifier": "encoder_right",
       "compatible": "alps,ec11",
