@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: Deemen17
+      url-base: https://github.com/Deemen17
   projects:
     - name: zmk
-    
-      remote: zmkfirmware
-      revision: main
-
+      remote: Deemen17
+      revision: display/bongo-cat-widget
       import: app/west.yml
   self:
     path: config
