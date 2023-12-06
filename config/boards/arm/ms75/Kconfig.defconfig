@@ -6,7 +6,6 @@ config ZMK_KEYBOARD_NAME
 endif # BOARD_MS75_V1_LEFT
 
 if ZMK_DISPLAY
-
 config I2C
 	default y
 	
@@ -30,22 +29,6 @@ config LV_Z_BITS_PER_PIXEL
 
 choice LV_COLOR_DEPTH
 	default LV_COLOR_DEPTH_1
-endchoice
-
-choice ZMK_DISPLAY_STATUS_SCREEN
-	default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
-endchoice
-
-config ZMK_DISPLAY
-	select LV_USE_CONT
-	select LV_FONT_MONTSERRAT_26
-
-choice LV_FONT_DEFAULT
-    default LV_FONT_DEFAULT_MONTSERRAT_26
-endchoice
-
-choice ZMK_LV_FONT_DEFAULT_SMALL
-    default ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26
 endchoice
 
 endif # ZMK_DISPLAY
