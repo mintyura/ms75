@@ -2,6 +2,8 @@ if BOARD_MS75_V1_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "Mystery_75 Slave"
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
 endif # BOARD_MS75_V1_LEFT
 
@@ -37,9 +39,6 @@ if BOARD_MS75_V1_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Mystery_75"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-	default y
 
 endif # ZMK_DISPLAY
 
