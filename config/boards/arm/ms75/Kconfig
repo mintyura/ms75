@@ -4,3 +4,25 @@ config BOARD_ENABLE_DCDC
 	default y
 	depends on (BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT) 
 
+if ZMK_DISPLAY
+
+menuconfig ZAPHOD_BONGO_CAT
+    bool "Show WPM bongo cat"
+    select ZMK_WPM
+    select LV_USE_IMG
+    select LV_USE_ANIMATION
+
+if ZAPHOD_BONGO_CAT
+
+config ZAPHOD_BONGO_CAT_IDLE_LIMIT
+    int "Upper limit for WPM for showing idle animation"
+    default 30
+
+config ZAPHOD_BONGO_CAT_SLOW_LIMIT
+    int "Upper limit for WPM for showing slow typing image"
+    default 60
+
+endif # ZAPHOD_BONGO_CAT
+
+
+endif
