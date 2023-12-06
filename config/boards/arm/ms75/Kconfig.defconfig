@@ -29,6 +29,21 @@ choice LV_COLOR_DEPTH
 	default LV_COLOR_DEPTH_1
 endchoice
 
+config BONGO_CAT
+        bool "WPM animation"
+        depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+        select LVGL_USE_IMG
+        select LVGL_USE_ANIMATION
+        select ZMK_WPM
+
+    config BONGO_CAT_IDLE_LIMIT
+        int "Upper limit for WPM for showing idle animation"
+        default 30
+
+    config          BONGO_CAT_SLOW_LIMIT
+        int "Upper limit for WPM for showing slow typing image"
+        default 60
+
 endif # ZMK_DISPLAY
 endif # BOARD_MS75_V1_RIGHT
 
