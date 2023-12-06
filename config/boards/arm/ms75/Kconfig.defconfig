@@ -20,6 +20,10 @@ config ZMK_DISPLAY
 
 choice ZMK_DISPLAY_STATUS_SCREEN
 	default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+endchoice
+
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+	select LV_USE_LABEL
 
 config I2C
 	default y
