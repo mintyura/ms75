@@ -3,6 +3,8 @@ if BOARD_MS75_V1_RIGHT
 config ZMK_KEYBOARD_NAME
 	default "Mystery_75 Slave"
 
+endif # BOARD_MS75_V1_LEFT
+
 if ZMK_DISPLAY
 config I2C
 	default y
@@ -60,7 +62,8 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
-endif # BOARD_MS75_V1_LEFT
+endif # ZMK_DISPLAY
+
 
 if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
 
