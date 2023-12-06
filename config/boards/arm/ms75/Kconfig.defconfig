@@ -36,21 +36,6 @@ endchoice
         config SYSTEM_WORKQUEUE_STACK_SIZE
     		default 2048
 
- 	config BONGO_CAT
-        	bool "WPM animation"
-        	depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
-        	select LVGL_USE_IMG
-        	select LVGL_USE_ANIMATION
-        	select ZMK_WPM
-
-    	config BONGO_CAT_IDLE_LIMIT
-        	int "Upper limit for WPM for showing idle animation"
-        	default 30
-
-    	config BONGO_CAT_SLOW_LIMIT
-        	int "Upper limit for WPM for showing slow typing image"
-        	default 60
-
 endif # ZMK_DISPLAY
 endif # BOARD_MS75_V1_RIGHT
 
@@ -65,6 +50,21 @@ config ZMK_SPLIT_ROLE_CENTRAL
 endif # BOARD_MS75_V1_LEFT
 
 if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
+
+ 	config BONGO_CAT
+        	bool "WPM animation"
+        	depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+        	select LVGL_USE_IMG
+        	select LVGL_USE_ANIMATION
+        	select ZMK_WPM
+
+    	config BONGO_CAT_IDLE_LIMIT
+        	int "Upper limit for WPM for showing idle animation"
+        	default 30
+
+    	config BONGO_CAT_SLOW_LIMIT
+        	int "Upper limit for WPM for showing slow typing image"
+        	default 60
 
 config BOARD
 	default "MS75"
