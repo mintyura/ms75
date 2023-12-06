@@ -53,6 +53,21 @@ config BONGO_CAT
         int "Upper limit for WPM for showing slow typing image"
         default 60
 
+        choice ZMK_DISPLAY_STATUS_SCREEN
+        	default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+        endchoice
+
+        config SYSTEM_WORKQUEUE_STACK_SIZE
+    		default 2048
+
+        choice LVGL_THEME_DEFAULT_FONT_NORMAL
+            default LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
+        endchoice
+
+        choice LVGL_THEME_DEFAULT_FONT_SMALL
+            default LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_16
+        endchoice
+
 endif # ZMK_DISPLAY
 endif # BOARD_MS75_V1_RIGHT
 
