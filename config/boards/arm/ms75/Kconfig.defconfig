@@ -51,6 +51,14 @@ endif # BOARD_MS75_V1_LEFT
 
 if BOARD_MS75_V1_LEFT || BOARD_MS75_V1_RIGHT
 
+    	config ZMK_DISPLAY
+        	select LVGL_USE_CONT
+        	select LVGL_FONT_MONTSERRAT_26
+        	select LVGL_FONT_MONTSERRAT_20
+        	select LVGL_FONT_MONTSERRAT_16
+        	select LVGL_USE_LABEL
+        	select LVGL_USE_IMG
+
  	config BONGO_CAT
         	bool "WPM animation"
         	depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
