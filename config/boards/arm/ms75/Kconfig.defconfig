@@ -1,7 +1,7 @@
 if BOARD_MS75_V1_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Mystery_75 Slave"
+	default "Mystery_75"
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
@@ -54,8 +54,6 @@ config ZMK_SPLIT
 config BT_CTLR
 	default BT
 
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
 
 if USB
 
