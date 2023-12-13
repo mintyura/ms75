@@ -23,12 +23,12 @@
 
         rgb_layer {
             bindings = <
-                &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &bootloader
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1               &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+                     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &bootloader
+&bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1               &kp N1
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
