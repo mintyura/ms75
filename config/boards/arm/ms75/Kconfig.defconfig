@@ -1,7 +1,7 @@
 if BOARD_MS75_V1_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Mystery_75 Master"
+	default "Ms75_Master"
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
