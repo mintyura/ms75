@@ -6,6 +6,13 @@
 
 / {
     macros {
+        Screenshot: Screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp PRINTSCREEN>, <&macro_press>;
+
+            label = "SCREENSHOT";
+        };
     };
 
     keymap {
@@ -26,12 +33,12 @@
 
         rgb_layer {
             bindings = <
-                     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                    &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1      &bootloader
-&bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                    &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                       &kp HOME
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1                    &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp K_POWER      &kp END
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1                            &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp F13          &rgb_ug RGB_ON
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1                            &kp N1           &kp N1           &kp N1           &kp N1  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &mt LEFT_WIN PRINTSCREEN  &kp N1  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
+                     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1      &bootloader
+&bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1       &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                       &kp HOME
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1       &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp K_POWER      &kp END
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1               &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp F13          &rgb_ug RGB_ON
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1               &kp N1           &kp N1           &kp N1           &kp N1  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &Screenshot  &kp N1  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
