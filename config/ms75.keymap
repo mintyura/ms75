@@ -9,7 +9,10 @@
         Screenshot: Screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp PRINTSCREEN>, <&macro_tap>, <&kp F13>;
+            bindings =
+                <&kp LEFT_WIN &kp PRINTSCREEN>,
+                <&macro_press>,
+                <&kp F13>;
 
             label = "SCREENSHOT";
         };
@@ -35,7 +38,7 @@
             bindings = <
                      &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1           &bootloader
 &bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                            &kp HOME
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1           &kp N1           &kp END
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1           &kp K_POWER      &kp END
 &kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &kp N1           &kp F13          &kp PAGE_DOWN
 &kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &sys_reset
 &kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
