@@ -5,9 +5,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -26,12 +23,12 @@
 
         rgb_layer {
             bindings = <
-                     &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1      &bootloader
-&bootloader  &kp N1  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                       &kp HOME
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp K_POWER      &kp END
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp F13          &rgb_ug RGB_ON
-&kp N1       &kp N1  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
-&kp N1       &kp N1  &kp N1  &kp N1  &kp LEFT_WIN  &kp PRINTSCREEN  &kp N1  &kp N1  &kp N1  &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
+                           &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1      &bootloader
+&bootloader  &out OUT_TOG  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                       &kp HOME
+&kp N1       &kp N1        &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp K_POWER      &kp END
+&kp N1       &kp N1        &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &kp N1      &kp F13          &rgb_ug RGB_ON
+&kp N1       &kp N1        &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
+&kp N1       &kp N1        &kp N1  &kp N1  &kp LEFT_WIN  &kp PRINTSCREEN  &kp N1  &kp N1  &kp N1  &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
