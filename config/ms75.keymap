@@ -23,12 +23,12 @@
 
         rgb_layer {
             bindings = <
-                           &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1                   &kp N1           &kp N1           &kp N1  &kp N1        &bootloader
-&bootloader  &out OUT_TOG  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1                         &kp HOME
-&kp N1       &sys_reset    &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1  &kp N1  &kp N1           &kp N1           &kp N1           &kp N1  &kp N1        &kp CAPSLOCK     &kp END
-&kp N1       &bt BT_CLR    &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &kp N1        &sys_reset       &rgb_ug RGB_ON
-&kp N1       &kp N1        &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1          &kp N1           &kp N1           &kp N1           &kp N1  &out OUT_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
-&kp N1       &kp N1        &kp N1  &kp N1  &kp LEFT_WIN  &kp PRINTSCREEN  &kp N1  &kp N1  &kp N1  &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
+                           &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1        &kp N1                   &kp N1           &kp N1           &kp N1        &kp N1        &bootloader
+&bootloader  &out OUT_TOG  &kp N1  &kp N1  &kp N1        &kp N1           &kp N1  &kp N1  &kp N1  &kp N1        &kp N1  &kp N1           &kp N1           &kp N1           &kp N1        &kp N1                         &kp HOME
+&kp N1       &sys_reset    &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1        &kp N1  &kp N1           &kp N1           &kp N1           &kp N1        &kp N1        &kp CAPSLOCK     &kp END
+&kp N1       &bt BT_CLR    &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &kp N1                &kp N1           &kp N1           &kp N1           &kp N1        &kp N1        &sys_reset       &rgb_ug RGB_ON
+&kp N1       &kp N1        &kp N1  &kp N1  &kp N1        &kp N1           &kp N1          &kp N1  &bt BT_SEL 0          &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &out OUT_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_OFF
+&kp N1       &kp N1        &kp N1  &kp N1  &kp LEFT_WIN  &kp PRINTSCREEN  &kp N1  &kp N1  &kp N1  &none         &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
