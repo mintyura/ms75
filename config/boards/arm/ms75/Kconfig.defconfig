@@ -17,9 +17,6 @@ config LVGL
 config SSD1306
 	default y
 
-config SSD1306_REVERSE_MODE
-	default y
-
 config LV_Z_VDB_SIZE
 	default 64
 
